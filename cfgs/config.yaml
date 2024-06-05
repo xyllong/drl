@@ -1,0 +1,13 @@
+parser = argparse.ArgumentParser()
+parser.add_argument('--algorithm', type=str, default='cql')
+parser.add_argument('--dataset', type=str, default='halfcheetah-medium-replay-v0')
+parser.add_argument('--data_type', type=str, default='trim')
+parser.add_argument('--weighted', action='store_true')
+parser.add_argument('--seed', type=int, default=1)
+parser.add_argument('--trim_pct', type=float, default=0)
+
+parser.add_argument('--training_steps', type=int, default=500000)
+parser.add_argument('--n_steps_per_epoch', type=int, default=1000)
+parser.add_argument('--batch_size', type=int, default=256)
+
+parser.add_argument('--gpu', type=int, default=0)
